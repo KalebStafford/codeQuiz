@@ -116,3 +116,34 @@ restartQuiz.onclick = () => {
       option[i].setAttribute("onclick", "optionSelected(this)");
     }
   }
+  function startTime(time) {
+    timer = setInterval(timerContainer, 1000);
+    function timerContainer() {
+      timeCount.textContent = time;
+      time--;
+      if (time < 9) {
+        let addZero = timeCount.textContent;
+        timeCount.textContent = "0" + addZero;
+      }
+      if (time < 0) {
+        clearInterval(timer);
+        timeText.textContent = "Out of Time";
+        let allOptions = optionChoices.children.length;
+        let correcAns = questions[questionCount].answer;
+        for (i = 0; i < allOptions; i++) {
+          if (optionChoices.children[i].textContent == correcAns) {
+            optionChoices.children[i].setAttribute("class", "option correct");
+            optionChoices.children[i].insertAdjacentHTML(
+              "beforeend",
+              correctIcon
+            );
+            console.log("Out of Time.");
+          }
+        }
+        for (i = 0; i < allOptions; i++) {
+          optionChoices.children[i].classList.add("disabled");
+        }
+        nextBtn.classList.add("show");
+      }
+    }
+  }
