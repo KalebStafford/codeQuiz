@@ -5,43 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Quiz</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./JavaScript/script.js" defer></script>
     <script src="./JavaScript/questions.js" defer></script>
-</head>
-    <body>
-  <div class="beginBtn">
-    <button>Begin</button>
-  </div>
-  <div class="ruleContainer">
-    <div class="ruleTitle">
-      <p>Some Rules of this Quiz</p>
+    <script src="./JavaScript/script.js" defer></script>
+  </head>
+  <body>
+    <div class="beginBtn">
+      <button>Begin</button>
     </div>
-    <div class="ruleList">
-      <p>
-        Each question will give you multiple answer choices. Only one answer
-        choice is correct! When you get a question right, you will get to move
-        on with no penelty. The score at the end will be displayed to see how
-        many answers you got right. Are you ready?
-      </p>
-    </div>
-    <div class="workingBtn">
-      <button class="quitBtn">Exit</button>
-      <button class="restartBtn">Continue</button>
-    </div>
-  </div>
-  <div class="quizContainer">
-    <header>
-      <div class="quizHeading">Javascript Quiz</div>
-      <div class="timerContainer">
-        <div class="timeLeft">Time Left</div>
-        <div class="timeSeconds">GO</div>
+    <div class="ruleContainer">
+      <div class="ruleTitle">
+        <p>Some Rules of this Quiz</p>
       </div>
-      <div class="timeDisplay"></div>
-    </header>
-    <div class="questionContainer">
-      <div class="questionMain"></div>
-      <div class="optionChoices"></div>
+      <div class="ruleList">
+        <p>
+          Each question will give you multiple answer choices. Only one answer
+          choice is correct! When you get a question right, you will get to move
+          on with no penelty. The score at the end will be displayed to see how
+          many answers you got right. Are you ready?
+        </p>
+      </div>
+      <div class="workingBtn">
+        <button class="quitBtn">Exit</button>
+        <button class="restartBtn">Continue</button>
+      </div>
     </div>
-  </div>
-    </body>
-</head>
+    <div class="quizContainer">
+      <header>
+        <div class="quizHeading">Javascript Quiz</div>
+        <div class="timerContainer">
+          <div class="timeLeft">Time Left</div>
+          <div class="timeSeconds">GO</div>
+        </div>
+        <div class="timeDisplay"></div>
+      </header>
+      <div class="questionContainer">
+        <div class="questionMain"></div>
+        <div class="optionChoices"></div>
+      </div>
+      <footer>
+        <div class="totalQuestions"></div>
+        <button class="nextBtn">Next</button>
+      </footer>
+    </div>
+    <div class="resultContainer">
+      <div class="congrats">Congradulations!</div>
+      <div class="scoreContainer"></div>
+      <div class="workingBtn">
+        <button class="restartBtn">Replay</button>
+        <button class="quitBtn">Quit</button>
+      </div>
+    </div>
+  </body>
+</html>
