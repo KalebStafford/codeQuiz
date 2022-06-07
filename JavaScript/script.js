@@ -89,3 +89,30 @@ restartQuiz.onclick = () => {
     }
     nextBtn.classList.add("show");
   }
+  function displayQuestions(Data) {
+    let que_tag =
+      "<span>" +
+      questions[Data].numb +
+      ". " +
+      questions[Data].question +
+      "</span>";
+    let option_tag =
+      '<div class="option"><span>' +
+      questions[Data].options[0] +
+      "</span></div>" +
+      '<div class="option"><span>' +
+      questions[Data].options[1] +
+      "</span></div>" +
+      '<div class="option"><span>' +
+      questions[Data].options[2] +
+      "</span></div>" +
+      '<div class="option"><span>' +
+      questions[Data].options[3] +
+      "</span></div>";
+    questionMain.innerHTML = que_tag;
+    optionChoices.innerHTML = option_tag;
+    let option = optionChoices.querySelectorAll(".option");
+    for (i = 0; i < option.length; i++) {
+      option[i].setAttribute("onclick", "optionSelected(this)");
+    }
+  }
