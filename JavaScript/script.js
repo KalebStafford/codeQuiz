@@ -39,3 +39,24 @@ restartQuiz.onclick = () => {
     timeText.textContent = "Time Left";
     nextBtn.classList.remove("show");
   };
+  quitQuiz.onclick = () => {
+    window.location.reload();
+  };
+  nextBtn.onclick = () => {
+    if (questionCount < questions.length - 1) {
+      questionCount++;
+      questionNumber++;
+      clearInterval(timer);
+      clearInterval(timerLine);
+      startTime(timeValue);
+      startTimeContainer(widthVar);
+      displayQuestions(questionCount);
+      questionCounterMain(questionNumber);
+      timeText.textContent = "Time Left";
+      nextBtn.classList.remove("show");
+    } else {
+      clearInterval(timer);
+      clearInterval(timerLine);
+      showResult();
+    }
+  };
