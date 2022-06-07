@@ -42,5 +42,49 @@ let questions = [
       "NaN Property represents 'Not-a-Nuisance' value. It indicates a value which will not cause any problems in future code.",
       "NaN Property represents 'Not-a-Number' value. It indicates a value which is not a legal number."
     ]
+  },
+  {
+    numb: 5,
+    question: "What are Arrow Functions?",
+    answer: "They provide us with a new and shorter syntax for declaring functions. Arrow functions can only be used as a function expression.",
+    options: [
+      "They provide us with a new and shorter syntax for declaring objects. Arrow functions can only be used as an object expression.",
+      "They provide us with a new and longer syntax for declaring complex functions. Arrow functions can be used with any function.",
+      "They provide us with a new and shorter syntax for declaring elements. Arrow functions can be used with any element.",
+      "They provide us with a new and shorter syntax for declaring functions. Arrow functions can only be used as a function expression."
+    ]
+  },
+  {
+    numb: 6,
+    question: "What is the use of promises in JavaScript?",
+    answer: "Promises are used to handle asynchronous operations in JavaScript.",
+    options: [
+      "Promises are used to handle all types of operations in JavaScript and Python.",
+      "Promises are made to yourself in hopes that you will finish work on time.",
+      "Promises are used to handle asynchronous operations in JavaScript.",
+      "Promises are used to handle complex functions and function derivatives in JavaScript."
+    ]
+  },
+  {
+    numb: 7,
+    question: "What is Object Destructuring?",
+    answer: "Object Destructuring is a new way to extract elements from an object or an array.",
+    options: [
+      "Object Destructuring is a new way to extract elements from an object or an array.",
+      "Object Destructuring is a new way to extract functions from the entire script or multiple scripts.",
+      "Object Destructuring is a new way to create elements from an object to an array.",
+      "Object Destructuring is a new way to translate objects into other languages, such as python."
+    ]
+  },
+  {
+    numb: 8,
+    question: "What is a Temporal Dead Zone?",
+    answer: "It is a behavior where it will try to access a variable before it is initialized.",
+    options: [
+      "It is a custom class that tries to access an object before it is initialized.",
+      "It is a behavior where it will try to access a variable before it is initialized.",
+      "It is a behavior where a developer will zone out and daydream after coding for multiple hours straight.",
+      "It is a behavior where it will try to access a variable after it is initialized."
+    ]
   }
 ]
