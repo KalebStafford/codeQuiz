@@ -60,3 +60,32 @@ restartQuiz.onclick = () => {
       showResult();
     }
   };
+  function optionSelected(answer) {
+    clearInterval(timer);
+    clearInterval(timerLine);
+    let userAns = answer.textContent;
+    let correcAns = questions[questionCount].answer;
+    let allOptions = optionChoices.children.length;
+    if (userAns == correcAns) {
+      liveScore += 1;
+      answer.classList.add("correct");
+      answer.insertAdjacentHTML("beforeend", correctIcon);
+      console.log("Correct");
+      console.log("Your correct answers = " + liveScore);
+    } else {
+      answer.classList.add("incorrect");
+      answer.insertAdjacentHTML("beforeend", wrongIcon);
+      console.log("Wrong");
+      for (i = 0; i < allOptions; i++) {
+        if (optionChoices.children[i].textContent == correcAns) {
+          optionChoices.children[i].setAttribute("class", "option correct");
+          optionChoices.children[i].insertAdjacentHTML("beforeend", correctIcon);
+          console.log("Displayed Correct Answer.");
+        }
+      }
+    }
+    for (i = 0; i < allOptions; i++) {
+      optionChoices.children[i].classList.add("disabled");
+    }
+    nextBtn.classList.add("show");
+  }
