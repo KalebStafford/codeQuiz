@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url(https://i.pinimg.com/originals/1e/ff/fa/1efffa2778c139365a1183cf401dfbb1.jpg);
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
+      serif "Poppins", sans-serif;
+  }
+  ::selection {
+    color: #fff;
+    background: #007bff;
+  }
+  .beginBtn {
+    position: absolute;
+    top: 45vh;
+    left: 45vw;
+  }
+  .ruleContainer {
+    position: absolute;
+    top: 45vh;
+    left: 45vw;
+  }
