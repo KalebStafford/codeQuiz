@@ -147,3 +147,22 @@ restartQuiz.onclick = () => {
       }
     }
   }
+  function startTimeContainer(time) {
+    timerLine = setInterval(timerContainer, 29);
+    function timerContainer() {
+      time += 1;
+      timeDisplay.style.width = time + "px";
+      if (time > 500) {
+        clearInterval(timerLine);
+      }
+    }
+  }
+  function questionCounterMain(Data) {
+    let totalQuestions =
+      "<span><p>" +
+      Data +
+      "</p> of <p>" +
+      questions.length +
+      "</p> Questions</span>";
+    questionCounter.innerHTML = totalQuestions;
+  }
